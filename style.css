@@ -1,0 +1,78 @@
+
+body{
+    background-color: #ccccff;
+    background-image: url(img/image-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 99% 55% ;
+}
+.styled:hover {
+    background-color: rgb(17, 0, 255);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+h1{
+  font-weight: normal;
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 500px;
+  color: #000000;
+  text-align: left;
+
+}
+p{
+    font-weight: normal;
+   
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    
+  
+  }
+form{
+  margin: 0 auto;
+  width: 500px;
+  padding-top: 40px;
+ 
+  position: relative;
+  
+  
+}
+
+
+input{
+  border:none;
+  outline:none;
+  display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  position:relative;
+  bottom:6px;
+  right:5px;
+  left:30px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+}
+.formgroup{
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 10.5%;
+  
+  
+  width: 566px;
+  padding-top: 10px;
+}
+input[type="submit"]{ 
+  background:#7e10f354 ;
+  color:#fff;
+  position:relative;
+  left:9px;
+  top:25px; 
+  width:100px;
+  cursor:pointer;
+}

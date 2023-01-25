@@ -1,0 +1,25 @@
+<?php
+	
+	$conn = new mysqli("localhost", "root", "", "agence") or die(mysqli_error($conn));
+
+	if(ISSET($_POST['add_guest'])){
+		
+		$checkin = $_POST['date'];
+		$checkout = $_POST['date'];
+
+		$query = $conn->query ("SELECT * FROM client WHERE id='$id' " ) or die(mysqli_error($conn));
+		$fetch = $query->fetch_array();
+		
+
+		if($checkin < date("Y-m-d", strtotime('+8 HOURS'))){	
+				echo "<script>alert('Must be present date')</script>";
+			}
+				
+						
+							$conn->query("INSERT INTO reservation(checkin, checkout) VALUES('$checkin','$checkout')") or die(mysqli_error($conn));
+							header("location:reply_reserve.php");
+						}else{
+							echo "<script>alert('Error Javascript Exception!')</script>";
+						}
+	
+?>
